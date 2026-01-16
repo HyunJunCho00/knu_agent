@@ -3,7 +3,7 @@ import base64
 import os
 import uuid
 from urllib.parse import urljoin
-from knu_chatbot.crawling.config import CONFIG # 설정값 불러오기
+from app.crawling.crawl_config import CONFIG # 설정값 불러오기
 
 def save_base64_image(base64_str):
     """
