@@ -1,0 +1,37 @@
+# --- 웹 서버 및 설정 ---
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# --- AI 에이전트 & LLM ---
+langchain
+langchain-core
+langchain-community
+langchain-upstage
+langgraph
+
+# --- 데이터베이스 연결 ---
+redis
+qdrant-client
+neo4j
+
+# --- 임베딩 & 검색 (ONNX & 형태소 분석) ---
+huggingface-hub
+optimum
+onnxruntime
+transformers
+torch
+kiwipiepy
+mmh3
+
+# --- 데이터 처리 & 스케줄링 ---
+numpy
+pandas
+tqdm
+ortools
+
+# --- 크롤링 & 기타 ---
+requests
+beautifulsoup4
