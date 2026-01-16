@@ -304,7 +304,14 @@ def process(target):
 
 if __name__ == "__main__":
     targets = []
-    master_file = "knu_master.jsonl"
+    
+    # [수정 핵심] "지금 이 파일(crawl_notice.py)이 있는 폴더"를 찾아냅니다.
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # 그 폴더 안에 있는 knu_master.jsonl을 가리킵니다.
+    master_file = os.path.join(current_dir, "knu_master.jsonl")
+    
+    print(f"🚀 [Debug] Master file path: {master_file}")
     
     if os.path.exists(master_file):
         with open(master_file, "r", encoding="utf-8") as f:
